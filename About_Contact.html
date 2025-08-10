@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <form action="" method="post">
+        <title>Contact Form</title>
+    <meta charset="UTF-8">
+
+    
+<header>        
+    <div class="form-header">
+            <h2>Contact Meghan</h2>
+    </div>
+</header>
+
+<body>
+
+    <nav>
+        <ul>
+            <li> <a href="About_Home.html">Home</a></li>
+            <li> <a href="About_Hobbies.html">My Hobbies</a></li>
+            <li> <a href="About_Eats.html">My Favorite Eats</a></li>
+            <li> <a href="About_Gallery.html">Gallery</a></li>            
+            <li> <a href="About_Contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+<form id="contactForm">
+    <!--For spacing, an alternative to p-aragraph may be:  <div class="UserName"> </div>  -->
+    <p>
+        <label for="Name">Name:  </label>
+        <input type="text" id="Name" name="User" placeholder="Enter your name" required>
+    </p>
+
+    <p>
+        <label for="messageBox">Message (250-character limit):  </label>
+            <textarea for="messageBox" maxlength="250"></textarea>
+            <!--Required attributes for data quality and first cybersecurity method-->
+    </p>
+
+    <p>
+        <label for="email">Your email (optional - Enter if you would like a response):  </label>    
+            <input 
+            type="email" 
+            id="email" 
+            name="email"
+            autocomplete="email"
+            placeholder="you@example.com"
+            />
+        <!--Not required, in case they don't want a response-->
+    </p>
+
+    <p>
+        <!--A label is not needed for submit button, but can be used for accessibility-->
+        <input type="submit"/>
+    <!--Alternative to "submit":  <input type="button">  -->
+    </p>
+
+  </form>
+
+</body>
